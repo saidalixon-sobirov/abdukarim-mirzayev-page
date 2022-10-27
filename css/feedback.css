@@ -1,0 +1,75 @@
+.feedback {
+  background-image: url(../img/Gradient.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.feedback .wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-container {
+  padding: 80px;
+  color: var(--white);
+  width: 70%;
+}
+
+.feedback-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+
+.feedback-desc,
+.feedback-desc2 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--yellow);
+  margin: 40px 0;
+}
+
+.feed-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.circle.active {
+  background-color: var(--green);
+  position: relative;
+}
+
+.circle.active::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 2px solid var(--green);
+}
+
+
+.circle:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,52 @@
+.lessons-section {
+  padding: 80px 0;
+}
+
+.lessons-box {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.lesson {
+  width: 100%;
+  padding: 40px;
+  border: 2px solid var(--yellow);
+  color: var(--white);
+}
+
+.lesson-number {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lesson-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 5px 0 20px;
+}
+
+.lesson-desc {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.lesson-desc2 {
+  padding-top: 30px;
+}
+
+.join-group {
+  display: grid;
+  grid-template-columns: auto auto;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.join-group__text {
+  font-size: 14px;
+  font-weight: 700;
+  width: 80%;
+  color: var(--white);
+  margin-left: 30px;
+}

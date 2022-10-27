@@ -1,0 +1,169 @@
+@import url(./video.css);
+@import url(./infromation.css);
+@import url(./lessons.css);
+@import url(./feedback.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Product-Sans";
+  src: url("../fonts/product-sans/Product\ Sans\ Regular.ttf");
+}
+
+:root {
+  --green: #00e689;
+  --white: #fff;
+  --yellow: #faa40c;
+}
+
+body {
+  font-family: "Product-Sans";
+  overflow-x: hidden;
+  background-color: #000;
+}
+
+.wrapper {
+  max-width: 1300px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.noise {
+  background-image: url(../img/Rectangle.png);
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.main-page {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/Abdukarim\ Mirzayev\ portrait.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+
+.logo {
+  padding-top: 20px;
+}
+
+.green-text {
+  color: var(--green);
+}
+
+.intro-box {
+  min-height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.intro-title {
+  width: 50%;
+}
+
+.main-title {
+  font-size: 45px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.main-desc {
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 24px;
+  width: 70%;
+}
+
+.btn-link {
+  background-color: var(--yellow);
+  display: inline-block;
+  padding: 16px 24px;
+  line-height: 24px;
+  color: #000;
+}
+
+.icon {
+  margin-left: 5px;
+}
+
+footer p{
+  padding: 40px;
+  text-align: center;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+footer p span {
+  margin-bottom: -5px;
+  margin-right: 3px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1133px) {
+  .intro-title {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-page {
+    background-image: none;
+    background-color: #000;
+    position: relative;
+  }
+
+  .intro-box {
+    position: relative;
+    min-height: 50vh;
+  }
+
+  .intro-box::after {
+    content: "";
+    position: absolute;
+    width: 200vw;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: transparent;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .intro-title {
+    width: 100%;
+  }
+
+  .main-desc {
+    width: 90%;
+  }
+
+  .mobile-img {
+    width: 100vw;
+    display: block;
+  }
+}

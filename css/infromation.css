@@ -1,0 +1,52 @@
+.information {
+  background-image: url(../img/Gradient.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.informations {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.infor {
+  padding: 80px 0;
+  position: relative;
+}
+
+.infor-text {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.infor-text {
+  position: relative;
+  left: 50px;
+}
+
+.line {
+  width: 80px;
+  height: 8px;
+  background-color: var(--yellow);
+  position: absolute;
+  left: -50px;
+  z-index: -1;
+  transform: rotate(90deg);
+}
+
+.line::before, .line::after {
+  width: 80px;
+  height: 8px;
+  content: "";
+  background-color: var(--yellow);
+  position: absolute;
+}
+
+.line::before {
+  transform: rotate(120deg);
+}
+
+.line::after {
+  transform: rotate(-120deg);
+}
